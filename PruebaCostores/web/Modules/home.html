@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog news - castores</title>
+    <link rel="stylesheet" href="../style/inicio.css" />
+</head>
+    <body onload="inizializar();">
+        <div class="recuadro" id="noticias">
+            <div class="recuadro-contenido">
+                <h1>Noticias</h1>
+                <div id="llenarNoticias">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="recuadro escondido" id="formularioNoticia">
+            <form class="recuadro-contenido">
+                <h1>Noticia nueva</h1>
+                <div class="input">
+                    <label for="txtTitulo">Titulo</label><br>
+                    <input  type="text" id="txtTitulo" required>
+                </div>
+                <div class="input">
+                    <label for="txtContenido">Contenido</label><br>
+                    <input type="text" id="txtContenido" required>
+                </div>
+                <div class="input">
+                    <label for="txtPersonal">Personal</label><br>
+                    <input type="text" id="txtPersonal" disabled>
+                </div>
+                <div class="btns">
+                    <a>
+                        <button class="boton-nota" type="button" onclick="enviarNoticia();">Enviar Noticia</button>
+                    </a>
+                    <a>
+                        <button class="boton-nota" type="button" onclick="regresar();">Regresar a Noticias</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
